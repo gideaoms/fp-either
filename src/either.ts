@@ -10,9 +10,9 @@ interface Right<A> {
 
 type Either<E, A> = Left<E> | Right<A>
 
-const isLeft = <E, A>(ma: Either<E, A>): ma is Left<E> => ma._tag === 'Left'
+const isLeft = <E, A>(ma: Either<E, A>): ma is Left<E> => ma?._tag === 'Left'
 
-const isRight = <E, A>(ma: Either<E, A>): ma is Right<A> => ma._tag === 'Right'
+const isRight = <E, A>(ma: Either<E, A>): ma is Right<A> => ma?._tag === 'Right'
 
 const left = <E = never, A = never>(e: E): Either<E, A> => ({ _tag: 'Left', left: e })
 
