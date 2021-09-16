@@ -1,0 +1,14 @@
+{
+  "name": "fp-either",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/either.js",
+  "scripts": {},
+  "keywords": [
+    "either",
+    "typescript",
+    "functional"
+  ],
+  "author": "Gideão Silva <gideaoms@gmail.com>",
+  "license": "ISC"
+}
