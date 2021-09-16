@@ -1,9 +1,9 @@
-interface Left<E> {
+type Left<E> = {
     readonly _tag: 'Left'
     readonly left: E
 }
 
-interface Right<A> {
+type Right<A> = {
     readonly _tag: 'Right'
     readonly right: A
 }
