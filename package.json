@@ -1,14 +1,32 @@
 {
   "name": "fp-either",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "private": true,
   "description": "",
   "main": "dist/either.js",
-  "scripts": {},
+  "scripts": {
+    "package": "gulp",
+    "compile": "rimraf ./dist && tsc"
+  },
   "keywords": [
     "either",
     "typescript",
     "functional"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gideaoms/fp-either.git"
+  },
   "author": "Gideão Silva <gideaoms@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/gulp": "4.0.9",
+    "gulp": "4.0.2",
+    "gulp-cli": "2.3.0",
+    "gulp-replace": "1.1.3",
+    "gulp-shell": "0.8.0",
+    "rimraf": "3.0.2",
+    "ts-node": "10.2.1",
+    "typescript": "4.4.3"
+  }
 }
